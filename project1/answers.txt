@@ -1,0 +1,52 @@
+Name: Alex Austin - Section 02
+CS 110
+Project 1 
+
+For each problem that requires a written answer, write (or copy-and-paste)
+your answers in this file.  When you are done, you should have replaced all
+the ellipses (the three dots) with your answers.
+
+At the end, you will turn in this file along with your modified
+dna_analysis.py program.
+
+Part 1a:
+
+(No answers in this section.)
+
+Part 1b:
+
+0.6468641125240355
+
+Part 2a:
+
+AT-content: 0.274056462962963
+
+Part 2b:
+
+A count: 7467696
+T count: 7331353
+G count: 6103168
+C count: 6075218
+
+Part 2c:
+(On sample_5.fastq)
+sum is 75
+Total count is:  76
+Length is  76
+
+Explanation:
+
+I found the answer by looking at every single file and comparing the answers. I decided to open up the smaller ones that had less than 100 bases of nucleotides so that it would be easier and quicker to examine the bases. I found out that the linenum if statement basically only reads the line with the nucleotides on it which is what allows for it to not have a larger length.
+
+There is a discrepancy between them all except for test-small.fastq because of the N on every fourth line factors into the length and total_count, where as the other (sum) only factors in 'A','T','C', or 'G'. The difference is harder to notice on the longer nucleotide strings because there is a lot more data to take in.
+
+The GC content can be calculated using sum, but not count and length because they factor in things like the N at start of every nucleotide chain. My program incorrectly counted GC count.
+
+
+Part 2d:
+
+2d. Ratio is 1.874760643552641
+
+Part 2e:
+
+moderate GC content
